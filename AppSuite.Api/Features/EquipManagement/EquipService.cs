@@ -30,6 +30,7 @@ namespace AppSuite.Api.Features.EquipManagement
                     ManufacturerId = r.MakeId,
                     ManufacturerName = r.Make,
                     ModelNumber = r.ModelNum,
+                    Description = r.Description,
                     CategoryId = r.EquipCategoryId,
                     CategoryName = (r.EquipCategory ?? new EquipCategory()).Name,
                     SubcategoryId = r.EquipSubcategoryId,
@@ -517,6 +518,7 @@ namespace AppSuite.Api.Features.EquipManagement
                     ManufacturerName = e.EquipManuf.Name,
                     ModelId = e.ModelId,
                     ModelNumber = e.ModelNum,
+                    Description = e.Description,
                     CategoryId = e.EquipCategoryId,
                     CategoryName = e.EquipCategory.Name,
                     SubcategoryId = e.EquipSubcategoryId,
@@ -639,11 +641,6 @@ namespace AppSuite.Api.Features.EquipManagement
 
             return equip;
 
-        }
-
-        private void GitTest()
-        {
-            return;
         }
 
         private void ValidateEquipManuf(EquipManuf equipManuf)
