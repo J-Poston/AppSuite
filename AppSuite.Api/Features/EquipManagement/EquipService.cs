@@ -641,6 +641,11 @@ namespace AppSuite.Api.Features.EquipManagement
 
         }
 
+        private void GitTest()
+        {
+            return;
+        }
+
         private void ValidateEquipManuf(EquipManuf equipManuf)
         {
             
